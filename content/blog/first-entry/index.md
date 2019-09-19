@@ -1,5 +1,6 @@
 ---
 title: My First Post!
+description: My First Post!
 date: "2019-08-09T21:13:17.354Z"
 ---
 Ok, this is weird but it is my first post.
