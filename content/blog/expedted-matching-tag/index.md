@@ -11,20 +11,20 @@ If use semistandard with React and decided to update to version 14, you might ha
 
 My guess is that your code looks something like this:
 
-<pre>
+```
   return <div>
     <Component />
   </div>;
-</pre>
+```
 
 Your first intuition to solve this issue could be to say: "Oh, I just need to indent the closing div, to match the opening one" (or at least that happened to me).
 
 So you go aheead and try this:
-<pre>
+```
   return <div>
            <Component />
          </div>;
-</pre>
+```
 
 And now you get this:
 <pre>
@@ -36,13 +36,13 @@ And so you scratch your head because if you put back the indentation of 2 you ge
 Well, you do so, with the help of some very useful and clarifying parenthesis. They will make semistandard happy, but more importanly, they will make your code cleaner and easier to read.
 
 This is how it would look:
-<pre>
+```
   return (
     <div>
       <Component />
     </div>
   );
-</pre>
+```
 
 Voila! No more linting errors.
 
