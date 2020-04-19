@@ -1,18 +1,19 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "victormc",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Victor Macias Castillo Personal site",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Victor Macias Castillo <v.maciascastillo@gmail.com>",
   "dependencies": {
+    "@material-ui/core": "^4.9.11",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.9.10",
     "gatsby": "^2.13.56",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-feed": "^2.3.6",
     "gatsby-plugin-google-analytics": "^2.1.23",
     "gatsby-plugin-manifest": "^2.2.5",
+    "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-offline": "^2.2.5",
     "gatsby-plugin-react-helmet": "^3.1.3",
     "gatsby-plugin-sharp": "^2.2.10",

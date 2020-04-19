@@ -16,7 +16,7 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -35,31 +35,33 @@ const Bio = () => {
   const { author, social } = data.site.siteMetadata
   return (
     <div
-      style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
+      style={{ marginBottom: rhythm(2.5) }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
-      <p>
-        Written by <strong>{author}</strong>. A Full Stack Developer from Spain, currently living in Brussels
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow me on Twitter
-        </a>
-      </p>
+      <div style={{ display: 'flex' }}>
+        <Image
+          fixed={data.avatar.childImageSharp.fixed}
+          alt={author}
+          style={{
+            marginRight: rhythm(1 / 2),
+            marginBottom: 0,
+            minWidth: 100,
+            borderRadius: `100%`,
+          }}
+          imgStyle={{
+            borderRadius: `50%`,
+          }}
+        />
+        <span style={{
+          margin: 'auto 0',
+          fontSize: '30px',
+          fontWeight: 500
+        }}>
+          Hi, I am Victor Macias Castillo
+        </span>
+      </div>
+      <div style={{ textAlign: 'center' }}>
+        React Developer
+      </div>
     </div>
   )
 }

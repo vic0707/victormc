@@ -3,12 +3,13 @@ module.exports = {
     title: `Victor MC Blog`,
     author: `Victor Macias Castillo`,
     description: `Victor's Blog`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://victormc.me`,
     social: {
       twitter: `VicMacCas7`,
     },
   },
   plugins: [
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -53,23 +54,17 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Victor MC Blog`,
+        short_name: `VictorMC`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/profile-pic.jpg`,
       },
     },
     `gatsby-plugin-offline`,
